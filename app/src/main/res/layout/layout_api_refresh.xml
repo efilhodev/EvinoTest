@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/errorRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:visibility="gone"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/tvInfoMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/load_game_list_failed_message"/>
+
+    <ImageView
+        android:id="@+id/ivErrorIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tvInfoMessage"
+        android:background="@drawable/ic_sad_emoticon"
+        android:alpha="0.5"/>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvInfoMessage"
+        android:layout_marginTop="2dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tvRefreshMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textSize="12sp"
+            android:text="@string/refresh_list_message"/>
+
+
+        <ImageView
+            android:id="@+id/ivRefreshIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/ic_refresh"
+            android:alpha="0.5"/>
+    </TableRow>
+</RelativeLayout>

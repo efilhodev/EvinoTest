@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/cvRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardPreventCornerOverlap="false"
+    app:cardBackgroundColor="@color/colorHardGray"
+    tools:ignore="SmallSp,UnusedAttribute"
+    android:transitionName="Screen"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/mplRoot"
+        style="@style/RippleStyleAccentColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivGameImage"
+                android:layout_width="180dp"
+                android:layout_height="190dp"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/place_holder_image_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ph_image_view"
+                android:foreground="@drawable/custom_gradient_shape" />
+
+            <TextView
+                android:id="@+id/tvGameName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/game_name_label"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/ivGameImage"
+                app:layout_constraintTop_toBottomOf="@+id/ivGameImage"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/tvViewers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/viewers"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/ivGameImage"
+                app:layout_constraintTop_toBottomOf="@+id/tvGameName"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/tvChannels"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/channels"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvViewers"
+                app:layout_constraintTop_toBottomOf="@+id/tvGameName"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="8dp" />
+
+        </android.support.constraint.ConstraintLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+</android.support.v7.widget.CardView>

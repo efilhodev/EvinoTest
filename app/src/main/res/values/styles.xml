@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/DefaultText</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="DefaultText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="ExpandedText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="RippleStyleAccentColor">
+        <item name="mrl_rippleOverlay">true</item>
+        <item name="mrl_rippleDelayClick">true</item>
+        <item name="mrl_rippleHover">true</item>
+        <item name="mrl_rippleAlpha">0.5</item>
+        <item name="mrl_rippleColor">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

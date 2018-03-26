@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">EvinoTestApp</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="place_holder_image_view">place holder image view</string>
+    <string name="channels">Canais:</string>
+    <string name="viewers">Espectadores:</string>
+    <string name="game_name_label">Game Name</string>
+    <string name="load_game_list_failed_message">Não foi possível carregar a lista de jogos</string>
+    <string name="refresh_list_message">Toque na tela para recarregar a lista</string>
+    <string name="search">Search</string>
+    <string name="popularity">Popularidade:</string>
+    <string name="description">Descrição</string>
+
+
+    <string name="mock_description_text">Lorem ipsum dolor sit amet, lobortis vitae duis tristique ac vitae metus, in nibh sed erat. Lectus nulla dictumst,
+        pede iaculis, eros vehicula sapien faucibus vestibulum tristique nec. Lacus nisl eros sapien proin quam, vel pellentesque fusce aliquid vel platea,
+        venenatis et sed habitasse diam in suscipit, dictumst magna sit ante, proin consequat ut. Nunc in, neque tellus posuere luctus leo ipsum. Sit molestie
+        quis, deleniti hac, tempor vitae quisque. Magna integer eu mauris arcu, etiam interdum erat vel venenatis donec vel, lorem fringilla justo est tempor
+        interdum. Odio duis. Doloremque lectus mauris eu fusce ut, assumenda pellentesque, mauris vitae accumsan pharetra sapien. Mauris varius amet, rutrum
+        diam amet gravida tempor rhoncus, quis ipsum maecenas metus eget laoreet, congue consequat nisl wisi. Condimentum vel integer purus risus et wisi.
+        Nullam wisi et in euismod in integer, porta pellentesque, nec turpis. Nonummy etiam vitae nisl amet.
+        Enim pede justo curabitur. Nullam aliquet at, vitae non sed interdum, odio lacinia mauris pellentesque, praesent pede ut pellentesque nec accumsan libero.
+        Tellus id, lorem lacinia at venenatis ultricies, nunc metus, id massa bibendum nisl nec. Porta donec id inceptos. Habitasse erat, urna scelerisque
+        ullamcorper maecenas mi dictum, tristique curabitur vulputate donec fringilla. Ut nunc. Risus sollicitudin felis phasellus suspendisse, est blandit vel in,
+        pellentesque lacinia hendrerit elementum integer, pretium vivamus purus ullamcorper justo et. Nam mi, erat orci sollicitudin convallis arcu, porta dolor
+        vehicula vestibulum gravida sociosqu, sem quisque consectetuer volutpat quo at, sodales mauris lectus a pretium a. Varius lorem, libero vitae in vitae
+        suscipit vitae. Rhoncus convallis elit gravida metus. Vel tristique ullamcorper ut, odio in ut. Nam amet fusce mauris condimentum vel magna, luctus leo
+        mattis, et ut aptent elementum</string>
+</resources>

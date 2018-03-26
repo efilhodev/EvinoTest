@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:transitionName="Screen"
+    tools:ignore="UnusedAttribute">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginBottom="15dp"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="15dp"
+            app:expandedTitleTextAppearance="@style/ExpandedText"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/ivGameImage"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/place_holder_image_view"
+                app:srcCompat="@drawable/ph_image_view"
+                android:foreground="@drawable/custom_gradient_shape"
+                tools:ignore="UnusedAttribute" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:title="Meu perfil"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorHardGray"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvViewers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/viewers"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:id="@+id/tvChannels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/channels"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvViewers"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvPopularity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/popularity"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvViewers"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/description"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPopularity"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp" />
+
+            <ProgressBar
+                android:id="@+id/pbLoading"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPopularity" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
